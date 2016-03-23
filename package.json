@@ -1,0 +1,24 @@
+{
+  "name": "manga2kindle",
+  "version": "1.0.0",
+  "description": "A manga downloader to generate a kindle file readable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaskatayama/manga2kindle.git"
+  },
+  "keywords": [
+    "kindle",
+    "manga",
+    "pdf"
+  ],
+  "author": "Lucas Katayama <lucaskatayama@gmail.com> (http://www.lucaskatayama.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaskatayama/manga2kindle/issues"
+  },
+  "homepage": "https://github.com/lucaskatayama/manga2kindle#readme"
+}
