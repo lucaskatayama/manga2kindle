@@ -1,6 +1,6 @@
 {
   "name": "manga2kindle",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A manga downloader to generate a kindle file readable",
   "main": "index.js",
   "scripts": {
