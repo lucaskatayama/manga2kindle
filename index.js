@@ -88,7 +88,7 @@ rp(options)
                 }
                 return null;
             }).filter(function(me){return me !== null;});
-            var me = filenames.concat([`${output}`]);
+            var me = filenames.concat(['-resize','x1600','-gravity', 'Center', '-extent','x1600' ,`${output}`]);
             im.convert(me);
         })
     })

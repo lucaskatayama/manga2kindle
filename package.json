@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/lucaskatayama/manga2kindle/issues"
   },
-  "homepage": "https://github.com/lucaskatayama/manga2kindle#readme"
+  "bin" : {
+    "manga2kindle" : "index.js"
+  },
+  "homepage": "https://github.com/lucaskatayama/manga2kindle#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "commander": "^2.9.0",
+    "fs-extra": "^0.26.7",
+    "imagemagick": "^0.1.3",
+    "request-promise": "^2.0.1"
+  }
 }
