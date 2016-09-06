@@ -1,10 +1,12 @@
 {
   "name": "manga2kindle",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "A manga downloader to generate a kindle file readable",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/babel-cli/bin/babel.js src/ -d dist",
+    "clean": "rimraf dist/",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -20,15 +22,30 @@
   "bugs": {
     "url": "https://github.com/lucaskatayama/manga2kindle/issues"
   },
-  "bin" : {
-    "manga2kindle" : "index.js"
+  "bin": {
+    "manga2kindle": "dist/index.js"
   },
   "homepage": "https://github.com/lucaskatayama/manga2kindle#readme",
   "dependencies": {
     "cheerio": "^0.20.0",
+    "columnify": "1.5.4",
     "commander": "^2.9.0",
     "fs-extra": "^0.26.7",
     "imagemagick": "^0.1.3",
     "request-promise": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.14.0",
+    "babel-plugin-transform-es2015-parameters": "6.11.4",
+    "babel-preset-es2015": "6.14.0",
+    "chai": "3.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.0.2",
+    "rimraf": "2.5.4"
   }
 }
