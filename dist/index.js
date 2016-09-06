@@ -21,7 +21,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //Read arguments
 var list;
-_commander2.default.version(_package.version).option('-n, --name <name>', 'Manga name', null).option('-c, --chapter <chapter>', 'Manga chapter', 1).option('-o, --out <output>', 'Output PDF name', null).option('-L, --list [letter]', 'List mangas').option('-s, --search [name]', 'Search by name').parse(process.argv);
+_commander2.default.version(_package.version).option('-n, --name <name>', 'Manga name', null).option('-c, --chapter <chapter>', 'Manga chapter', 1).option('-o, --out <output>', 'Output PDF name', null).option('-l, --list [letter]', 'List mangas').option('-s, --search [name]', 'Search by name').parse(process.argv);
 
 if (_commander2.default.list) {
     console.log('Listing:');
