@@ -115,7 +115,6 @@ function getManga(program) {
                         uri: url,
                         encoding: null
                     }).catch(function (err) {
-                        console.log(err);
                         console.log('Page error:', url);
                         return 'error';
                     });

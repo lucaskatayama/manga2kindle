@@ -92,7 +92,6 @@ export function getManga(program) {
                             uri: url,
                             encoding: null
                         }).catch((err) => {
-                            console.log(err)
                             console.log('Page error:', url);
                             return 'error';
                         });
